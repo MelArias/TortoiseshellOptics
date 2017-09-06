@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+nav {
+  display: flex;
+  width: 960px;
+  align-self: center;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  color: white;
+  margin-top: 1rem;
+}
+
+nav .company {
+  display: flex;
+  align-items: center;
+}
+
+.company img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+nav .menu-mobile {
+  display: none;
+}
+
+nav .menu {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+}
+
+.menu a {
+  padding-right: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  width: 960px;
+  align-self: center;
+  justify-content: flex-end;
+}
+
+.flex-container .main-banner {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: -2rem;
+}
+
+.main-banner span {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 1.5rem 5rem;
+}
+
+.services-container {
+  display: flex;
+  align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-container .service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 5rem;
+  height: 8rem;
+  margin: 3rem;
+}
+
+.service .paper {
+  width: 3.5rem;
+}
+
+.service .ruler,
+.service .truck {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.info-container {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info-container .info {
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  width: 35%;
+  margin-right: 5%;
+}
+
+.title {
+  background-color: cadetblue;
+  max-width: 10rem;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+}
+
+.info p {
+  padding-top: 1rem;
+}
+
+footer {
+  display: flex;
+  max-width: 960px;
+  margin: auto;
+  background-color: azure;
+  padding: 4rem 2rem;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    height: 22rem;
+  }
+
+  nav {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .flex-container .main-banner {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+
+  .main-banner span {
+    font-size: 1.33rem;
+    line-height: 1.2;
+    margin: 0.75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+
+  header {
+    height: 17rem;
+    background-position: 20%;
+    background-size: cover;
+  }
+
+  .company span {
+    display: none;
+  }
+
+  nav .menu {
+    display: none;
+  }
+
+  nav .menu-mobile {
+    display: inline;
+    padding-right: 2rem;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    height: 3rem;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .flex-container {
+    display: inline;
+    width: 100%;
+  }
+
+  .flex-container .main-banner {
+    display: block;
+    width: 100%;
+    margin-top: 9rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .main-banner span {
+    font-size: 1rem;
+  }
+
+  .services-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 3.77rem 0;
+  }
+
+  .services-container .service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 5rem;
+    height: auto;
+    margin-bottom: 1.54rem;
+    margin-top: auto;
+    font-size: 0.77rem;
+  }
+
+  .service .paper {
+    width: 3.5rem;
+  }
+
+  .service .ruler,
+  .service .truck {
+    width: 5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .info-container .info {
+    display: block;
+    width: auto;
+    margin-bottom: 4rem;
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .info .title {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0.5rem 0;
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .info p {
+    padding-top: 1rem;
+    font-size: 0.77rem;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+
+  footer span {
+    display: none;
+  }
+}
